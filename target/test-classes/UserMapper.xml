@@ -1,9 +1,0 @@
-<mapper namespace="com.learn.pojo.User">
-
-<!--    DATE_FORMAT(`createTime`, '%Y-%m-%d %k:%i:%s') AS `createTime`-->
-
-    <select id="getUserByName" parameterType="com.learn.pojo.User" resultType="com.learn.pojo.User">
-        SELECT `id`, `username` AS `userName`, `password`, `createTime`, `updateTime`
-        FROM `user` WHERE `username` = #{username}
-    </select>
-</mapper>
